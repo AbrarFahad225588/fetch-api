@@ -1,5 +1,6 @@
 
-import Quote from "./Components/Quote";
+import { Suspense } from "react";
+import Quote from "./Components/swr/Quote";
 
 function App() {
   return (
@@ -8,7 +9,10 @@ function App() {
       
          {/* <MyForm/> */}
          {/* <LoginForm/> */}
-         <Quote/>
+         <Suspense fallback={<div>this is loading state</div>}>
+          <Quote/>
+         </Suspense>
+        
       
       </header>
     </div>
