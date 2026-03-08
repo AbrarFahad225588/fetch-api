@@ -1,8 +1,5 @@
-// import logo from './logo.svg';
-// import './App.css';
 
-import LoginForm from "./Components/LoginForm";
-import MyForm from "./Components/MyForm";
+import Quote from "./Components/Quote";
 
 function App() {
   return (
@@ -10,7 +7,8 @@ function App() {
       <header className="App-header">
       
          {/* <MyForm/> */}
-         <LoginForm/>
+         {/* <LoginForm/> */}
+         <Quote/>
       
       </header>
     </div>
